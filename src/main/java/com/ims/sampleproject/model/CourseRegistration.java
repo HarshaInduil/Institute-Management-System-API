@@ -28,4 +28,7 @@ public class CourseRegistration extends BaseEntity {
 
     @Column(name = "course_fee")
     private BigDecimal courseFee;
+
+    @Column(name = "remark")
+    private String remark;
 }

@@ -41,4 +41,5 @@ public class Student extends BaseEntity {
 
     @OneToMany(mappedBy = "student")
     private Set<CourseRegistration> courseRegistrations;
+
 }

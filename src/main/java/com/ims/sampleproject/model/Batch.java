@@ -32,5 +32,5 @@ public class Batch extends BaseEntity {
     private Course course;
 
     @OneToMany(mappedBy = "batch")
-    private Set<CourseRegistration> courseRegistrationSet;
+    private Set<CourseRegistration> courseRegistration;
 }
