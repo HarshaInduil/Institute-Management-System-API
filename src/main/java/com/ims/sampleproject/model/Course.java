@@ -18,12 +18,16 @@ public class Course extends BaseEntity {
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "topic_id")
     Set<Topic> topics;
+
     @Column(name = "name")
     private String name;
+
     @Column(name = "course_fee")
     private BigDecimal courseFee;
+
     @Column(name = "description")
     private String description;
+
     @Column(name = "duration")
     private int duration;
 }

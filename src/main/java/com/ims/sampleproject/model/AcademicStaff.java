@@ -1,7 +1,9 @@
 package com.ims.sampleproject.model;
 
 import com.ims.sampleproject.dto.enumtype.Experience;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
@@ -10,6 +12,8 @@ import java.util.Date;
 
 @MappedSuperclass
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class AcademicStaff extends BaseEntity {
 
     @Column(name = "name")
